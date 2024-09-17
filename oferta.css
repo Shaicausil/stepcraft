@@ -1,0 +1,189 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+/* Esto es para que la imagen de la portada no tenga margen */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%; 
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #ffffff; 
+}
+
+/* Estilo para la sección de portada */
+
+.banner-container {
+position: relative;
+width: 100%;
+height: 500px; 
+overflow: hidden;
+}
+
+.banner {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transition: opacity 1s ease-in-out;
+}
+
+.banner img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.banner-container .banner:nth-child(1) {
+opacity: 1;
+}
+
+.banner-container .banner:nth-child(2) {
+    opacity: 0;
+}
+
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+
+    
+}
+.banner.active {
+    opacity: 1;
+}
+
+
+
+/* Estilo para el contenedor de tarjetas */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+/* Estilo para las tarjetas dentro del contenedor */
+.container .card {
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+/* Estilo para el efecto de hover en las tarjetas */
+.container .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para las imágenes dentro de las tarjetas */
+.container .card img {
+    width: 330px;
+    height: 220px;
+}
+
+/* Estilo para el encabezado dentro de las tarjetas */
+.container .card h4 {
+    font-weight: 600;
+    font-family: arial;
+}
+
+/* Estilo para los párrafos dentro de las tarjetas */
+.container .card p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: arial;
+}
+
+/* Estilo para los enlaces dentro de las tarjetas */
+.container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #000000;
+}
+/* etiqueta de dcto*/
+.discount-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    transform: rotate(-20deg);
+    transform-origin: 0 0;
+    z-index: 1; 
+}
+/* Estilo general para las tarjetas */
+.card {
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    border: 1;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Estilo para la imagen que aparece al pasar el ratón sobre la tarjeta */
+.card-img-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+/* Estilo para la imagen principal de la tarjeta al pasar el ratón */
+.card:hover .card-img-hover {
+    opacity: 1;
+}
+
+/* Estilo para ocultar la imagen principal al pasar el ratón */
+.card:hover .card-img-principal {
+    opacity: 0;
+}
+
+.card-text s {
+    text-decoration: line-through;
+    color: rgb(136, 133, 133);
+    font-size: 12px;
+}
+/* Estilo para los botones */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #75b9d4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+/* Estilo para el efecto de hover en los botones */
+.btn:hover {
+    background-color: #75b9d4;
+}

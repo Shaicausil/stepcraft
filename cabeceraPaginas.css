@@ -1,0 +1,188 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+/* Estilo para el encabezado */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between; 
+    background-color: #fcf6f6;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+}
+
+/* Estilo para el logotipo */
+.logo img {
+    max-height: 60px;
+}
+
+/* Contenedor para el menú, carrito y buscador */
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para la barra de navegación */
+.menu {
+    display: flex;
+    align-items: center; 
+}
+
+.menu nav {
+    height: 100%;
+}
+
+.menu nav ul {
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.menu nav ul li {
+    height: 100%;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu-selected:before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #75b9d4;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* color de letra y transición */
+.menu nav ul li a {
+    color: black;
+    transition: color 300ms;
+}
+
+.menu nav ul li a:hover {
+    color: #629ab1;
+}
+
+.menu nav ul li .text-menu-selected {
+    color: #629ab1;
+}
+
+/*menu celular*/
+
+#icon-menu img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* Estilo para el buscador */
+.search img {
+    max-height: 30px;
+}
+
+#contenedor-buscador{
+    position: fixed;
+    top: -10px;
+    width: 100%;
+    background: #ffffff;
+    padding: 20px;
+    z-index: 9;
+    transition: all 600ms;
+}
+
+#contenedor-buscador input{
+    display: block;
+    width: 1200px;
+    margin: auto;
+    padding: 10px;
+    font-size: 18px;
+    outline: 0;
+}
+
+#caja-busqueda{
+    position: fixed;
+    top: 165px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    background: #ffffff;
+    z-index: 8;
+    overflow: hidden;
+    display: none;
+}
+
+#caja-busqueda li a{
+    display: block;
+    width: 1200px;
+    color: black;
+    padding: 12px 20px ;
+}
+
+#caja-busqueda li a:hover{
+    background: #d6d6d6;
+}
+
+#caja-busqueda li a img{
+    margin-right: 10px;
+    max-height: 15px;
+}
+
+#cover-buscador{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 7;
+    display: none;
+}
+
+/* Estilo para la imagen del carrito */
+.carrito img {
+    max-height: 60px;
+}
+
+/* Alineación y separación de las imágenes de la cabezera */
+.header-content > div {
+    display: flex;
+    align-items: center;
+}
+
+/* Para ajustar la separación de las imágenes */
+.header-content .logo,
+.header-content .search,
+.header-content .carrito {
+    margin: 0 20px;
+}

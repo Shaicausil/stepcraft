@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <link rel="icon" href="./imgCabecera/logo_zapateria.png" type="image/x-icon">
+    <link rel="stylesheet" href="personalizacion.css">
+    <link rel="stylesheet" href="cabeceraPaginas.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <header>
+        <!--Barra de navegación-->
+        <div class="header-content">
+
+            <!--Logotipo -->
+            <div class="logo">
+                <a href="./paginaPrincipalAngela.html" class="ini-icon"><img src="./imgCabecera/logo_zapateria_2.png" alt="Logotipo de la tienda"></a>
+            </div>
+
+            <!--menu-->
+            <div class="header-right">
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="./ofertasShaira.html"> Ofertas</a></li>
+                            <li><a href="./contactoSebastian.html"> Contactos</a></li>
+                       
+                        </ul>
+                    </nav>
+                </div>
+
+            <!-- Buscador -->
+            <div class="search" id="buscador">
+                <img id="icon-buscador" src="./imgCabecera/buscador.png">
+            </div>
+                                
+
+            <!--Carrito-->
+            <div class="carrito">
+                <a href="./carritoJulian.html" class="cart-icon">
+                    <img src="./imgCabecera/carrito.png" alt="Carrito de Compras">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--Menu celular-->
+    <div id="icon-menu">
+      <img src="./imgCabecera/imagenMenu.png">
+    </div>
+
+    </header> 
+
+
+    <section>
+      <div id="contenedor-buscador">
+          <input type="text" id="inputSearch" placeholder="Buscar productos...">
+      </div>
+
+
+        <ul id="caja-busqueda">
+            <li><a href="#"><img src="./imgCabecera/buscador.png">Nike</a></li>
+            <li><a href="./personalizacionJulian.html"><img src="./imgCabecera/buscador.png">Nike Dunk Low</a></li>
+            <li><a href="./personalizacionJulian.html"><img src="./imgCabecera/buscador.png">Nike Pegasus Trail 5</a></li>
+            <li><a href="#"><img src="./imgCabecera/buscador.png">Adidas</a></li>
+            <li><a href="./personalizacionJulian.html"><img src="./imgCabecera/buscador.png">Adidas Tenis Advantage Base</a></li>
+            <li><a href="./personalizacionJulian.html"><img src="./imgCabecera/buscador.png">Adidas Tenis Courtblock</a></li>
+        </ul>
+
+        <div id="cover-buscador">
+        </div>
+    </section>
+    <br><br><br><br>
+    <script src="./paginaprincipal.js"></script>
+
+   <main>
+    <!-- CUADRO CENTRAL -->
+    <div class="portada">
+        <div class="box1">
+            <!-- CONTENEDOR IZQUIERDO IMAGENES -->
+            <div class="box2mod">
+                <img id="mainImage" src="./PersonalizacionJulian/0logo_zapateria_2.png" alt="Imagen central" class="main-image">
+                <h2>Tenis Base</h2><br><br>
+                <!--<div class="rowdirection"></div>
+                    <label class="pequeña">Talla:</label>
+                    <label class="pequeña">Talla:</label>
+                    <label class="pequeña">Talla:</label>
+                </div>-->
+                <div class="box3img">
+                    <div class="thumbnail-container">
+                        <img src="./PersonalizacionJulian/0logo_zapateria_2.png" alt="Imagen 1" class="thumbnail" id="imagen1">
+                        <img src="./PersonalizacionJulian/0logo_zapateria_2.png" alt="Imagen 2" class="thumbnail" id="imagen2">
+                        <img src="./PersonalizacionJulian/0logo_zapateria_2.png" alt="Imagen 3" class="thumbnail" id="imagen3">
+                    </div>
+                </div>
+                <div class="rowdirection">
+                    <div class="fila">
+                        <div class="col">
+                            <h3>Color Logo</h3>
+                        </div>
+                        <div class="col">
+                            <h3>Color de Color</h3>
+                        </div>
+                        <div class="col">
+                            <h3>Diseño (Dibujo)</h3>
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+            </div>
+            <!-- CONTENEDOR DERECHO OPCIONES -->
+            <div class="box3opciones">
+                <label class="grande">Escoje tus alternativas favoritas <br>y personaliza tus tenis!</label><br>
+                <label class="pequeña" for="talla">Talla:</label>
+                <select id="talla">
+                  <option value="38">38</option>
+                  <option value="39">39</option>
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                </select>
+                <label class="pequeña" for="tenisBase">Tenis Base:</label>
+                <select id="tenisBase">
+                  <option value="n/a">n/a</option>
+                  <option value="nikeDunk">Nike Dunk Low</option>
+                  <option value="adidasCourt">Adidas Court Block</option>
+                  <option value="adidasAdvantage">Adidas Advantage</option>
+                  <option value="nikePegasus">Nike Pegasus</option>
+                </select>
+                <label class="pequeña" for="logo">Color Logo:</label>
+                <select id="logo">
+                  <option value="n/a">n/a</option>
+                  <option value="Negro">Negro</option>
+                  <option value="Blanco">Blanco</option>
+                  <option value="Azul">Azul</option>
+                  <option value="Rojo">Rojo</option>
+                </select>
+                <label class="pequeña" for="cordon">Color del cordón:</label>
+                <select id="cordon">
+                  <option value="n/a">n/a</option>
+                  <option value="Negro">Negro</option>
+                  <option value="Blanco">Blanco</option>
+                  <option value="Rojo">Rojo</option>
+                  <option value="Azul">Azul</option>
+                </select>
+                <label class="pequeña" for="diseño">Diseño (Dibujo)</label>
+                <select id="diseño">
+                  <option value="n/a">n/a</option>
+                  <option value="onePiece">One Piece</option>
+                  <option value="harryPotter">Harry Potter</option>
+                  <option value="naruto">Naruto</option>
+                  <option value="pokemon">Pokemon</option>
+                  <option value="alas">Alas (fantasia)</option>
+                  <option value="Avatar">Avatar</option>
+                </select>
+          
+                <label class="pequeña" for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" value="1" min="1">
+          
+                <p class="totales">Precio unitario: $<span id="precio">0.00</span></p>
+                <p class="totales">Precio total: $<span id="precioTotal">0.00</span></p><br>
+          
+                <button id="agregarCarrito">Agregar al carrito</button>
+            </div>
+        </div>
+        <h1>StepCraft</h1>
+    </div>
+   </main>  
+   
+   <script src="personalizacion.js"></script> 
+
+  <!--footer-->
+<section>
+   <footer class="footer">
+       <ul class="social-icon">
+         <li class="icon-elem">
+           <a href="https://www.instagram.com/sxcausil" target="_blank" class="icon">
+             <ion-icon name="logo-instagram"></ion-icon>
+           </a>
+         </li>
+         <li class="icon-elem">
+           <a href= "https://wa.me/573137360284?text=Hola%2C%20c%C3%B3mo%20est%C3%A1s%3F" target="_blank" class="icon">
+             <ion-icon name="logo-whatsapp"></ion-icon>
+           </a>
+         </li>
+         <li class="icon-elem">
+           <a href="https://www.facebook.com/messages/t/yuleisy.shaira26/" target="_blank" class="icon">
+             <ion-icon name="logo-facebook"></ion-icon>
+           </a>
+         </li>
+         <li class="icon-elem">
+           <a href="https:/mail.google.com/mail/?view=cm&fs=1&to=causil845@gmail.com&suAsunto&body=Cuéntanos tu idea" target="_blank" class="icon">
+             <ion-icon name="mail-outline"></ion-icon> 
+           </a>
+         </li>
+       </ul>
+       <ul class="menu">
+         <li class="menu-elem">
+           <a href="./paginaPrincipalAngela.html" class="menu-icon"> Inicio </a>
+         </li>
+         <li class="menu-elem">
+           <a href="./blog.html" class="menu-icon"> Equipo </a>
+         </li>
+         <li class="menu-elem">
+           <a href="./contactoSebastian.html" class="menu-icon"> Contacto </a>
+         </li>
+         <li class="menu-elem">
+           <a href="./blog.html" class="menu-icon"> Sobre Nosotros </a>
+         </li>
+       </ul>
+       <p class="text">@2024 | Todos los derechos reservados</p>
+     </footer>
+     <script
+       type="module"
+       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+     ></script>
+     <script
+       nomodule
+       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+     ></script>
+
+   </section>
+</body>
+</html>

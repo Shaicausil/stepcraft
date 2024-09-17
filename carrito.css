@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.portada{
+    /*Aqui se centra y se edita la imagen y el texto de portada */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: arial;
+    color: rgb(255, 255, 255);
+    background-image: url(./portada.png);
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-color:rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+
+    /*Tamaño de texto y espacio entre el parrafo*/
+    h1{
+        font-size: 50px;
+        margin-bottom: 1px;
+    }
+    /*tamaño de parrafo y espacio de titulo*/
+    p{
+        
+        margin-top: 1;
+        font-family: arial;
+    }
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    font-family: arial;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(240, 248, 255, 0.772);
+    height: 750px;
+    width: 450px;
+    top: 200px;
+    gap: 5px;
+    margin: 10px;
+    border-radius: 8px;
+    overflow-y: auto;
+    
+}
+.box2{
+    flex-shrink: 0;
+    
+}
+.logo img {
+    height: 50px;
+}
+
+main {
+    padding: 20px;
+}
+
+#carrito {
+    margin-bottom: 20px;
+}
+
+.producto {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.totales {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+.mediano{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+.tipo1 {
+    margin-top: 5px;
+    font-size: 15px;
+    color: black;
+    font-family: arial;
+  }
+button {
+    padding: 5px 10px;
+    background-color: #75b9d4da;
+    color: rgb(1, 1, 1);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 10px;
+    max-width: 80%;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+button:hover {
+    background-color: #6abbdb;
+    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.3);
+    transform: translateY(-1px);
+}
+.modal {
+    display: none; /* Oculta la ventana modal por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 5px;
+    padding-left: 620px;
+    padding-top: 230px;
+    padding-right: 620px;
+    
+}
+
+.modal-content {
+    background-color: #fff;
+    justify-content: center;
+    align-content: center;
+    width: 300px;
+    height: 200px;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.cerrar {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: red;
+    cursor: pointer;
+}

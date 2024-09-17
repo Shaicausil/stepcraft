@@ -1,0 +1,242 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+/* Esto es para que la imagen de la portada no tenga margen */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%; 
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #ffffff; 
+}
+
+/* Estilo para la sección de portada */
+.portada {
+    /* Centra y edita la imagen y el texto de la portada */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background-image: url(./portada.png);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+/* Estilo para el título de la portada */
+.portada h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilo para el párrafo de la portada */
+.portada p {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+/* Estilo para el contenedor de tarjetas */
+.container {
+    width: 100%;
+    max-width: 1400px; 
+    height: auto; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin: auto;
+}
+
+/* Estilo para las tarjetas dentro del contenedor */
+.container .card {
+    width: 23%; 
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 10px; 
+    margin-top: 50px;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+}
+
+/* Asegúrate de que las imágenes dentro de las tarjetas se ajusten correctamente */
+.container .card img {
+    width: 100%; 
+    height: 220px;
+}
+
+/* Estilo para el encabezado dentro de las tarjetas */
+.container .card h4 {
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+/* Estilo para los párrafos dentro de las tarjetas */
+.container .card p {
+    padding: 0 1rem;
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+/* Estilo para los enlaces dentro de las tarjetas */
+.container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #000000;
+}
+
+/* etiqueta de precio*/
+.prize-tag {
+    position: absolute;
+    top: 180px;
+    left: 180px;
+    background-color: #F0F8FF;
+    color: rgb(8, 0, 0);
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    transform-origin: 0 0;
+    z-index: 1; 
+}
+
+/* Estilo para los botones */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #75b9d4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.4s ease;
+    margin-top: 1rem; 
+}
+
+/* Estilo para el efecto de hover en los botones */
+.btn:hover {
+    background-color: #5d95ac;
+}
+
+/* Imagen principal, para hacerla visible al principio */
+.card .card-img-principal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.4s ease;
+    opacity: 1;
+    z-index: 1;
+}
+
+/* Imagen de hover, para hacerla visible de segunda */
+.card .card-img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.4s ease;
+    opacity: 0;
+    z-index: 2;
+}
+
+/* Cuando se hace hover, la imagen de hover se hace visible y la principal se oculta */
+.card:hover .card-img-hover {
+    opacity: 1;
+}
+
+.card:hover .card-img-principal {
+    opacity: 0;
+}
+
+/* Contenedor de la promoción */
+.container-promo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Contenedor de las imágenes */
+.imagenes-container {
+    position: relative;
+    width: 40%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Imagen promo */
+.imagen-promo {
+    width: 100%;
+    display: none;
+}
+
+.imagen-promo.displaySlide {
+    display: block;
+}
+
+.container-promo button{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 5px 5px;
+    background-color: #dfdfdf3d;
+    color:#ffffff;
+    border: pointer;
+}
+
+/* Botones prev y next */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 24px;
+}
+
+.next {
+    right: 720px;
+}
+
+
+/* Texto promocional */
+.texto-promo {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Estilos para los encabezados y párrafos */
+h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}

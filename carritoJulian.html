@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="icon" href="./carrito.png" type="image/x-icon">
+    <link rel="stylesheet" href="cabeceraPaginas.css">
+    <link rel="stylesheet" href="carrito.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+  <body>
+    <header>
+        <!--Barra de navegación-->
+        <div class="header-content">
+
+            <!--Logotipo -->
+            <div class="logo">
+                <a href="./paginaPrincipalAngela.html" class="ini-icon"><img src="./imgCabecera/logo_zapateria_2.png" alt="Logotipo de la tienda"></a>
+            </div>
+
+            <!--menu-->
+            <div class="header-right">
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="./ofertasShaira.html"> Ofertas</a></li>
+                            <li><a href="./contactoSebastian.html"> Contactos</a></li>
+                       
+                        </ul>
+                    </nav>
+                </div>
+
+            <!-- Buscador -->
+            <div class="search" id="buscador">
+                <img id="icon-buscador" src="./imgCabecera/buscador.png">
+            </div>
+                                
+
+            <!--Carrito-->
+            <div class="carrito">
+                <a href="./carritoJulian.html" class="cart-icon">
+                    <img src="./imgCabecera/carrito.png" alt="Carrito de Compras">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--Menu celular-->
+    <div id="icon-menu">
+      <img src="./imgCabecera/imagenMenu.png">
+    </div>
+
+    </header> 
+
+
+    <section>
+      <div id="contenedor-buscador">
+          <input type="text" id="inputSearch" placeholder="Buscar productos...">
+      </div>
+
+
+        <ul id="caja-busqueda">
+            <li><a href="#"><img src="./imgCabecera/buscador.png">Nike</a></li>
+            <li><a href="./personalizacionJulian.html"><img src="./imgCabecera/buscador.png">Nike Dunk Low</a></li>
+            <li><a href="./personalizacionJulian.html"><img src="./imgCabecera/buscador.png">Nike Pegasus Trail 5</a></li>
+            <li><a href="#"><img src="./imgCabecera/buscador.png">Adidas</a></li>
+            <li><a href="./personalizacionJulian.html"><img src="./imgCabecera/buscador.png">Adidas Tenis Advantage Base</a></li>
+            <li><a href="./personalizacionJulian.html"><img src="./imgCabecera/buscador.png">Adidas Tenis Courtblock</a></li>
+        </ul>
+
+        <div id="cover-buscador">
+        </div>
+    </section>
+    <br><br><br><br>
+    <script src="./paginaprincipal.js"></script>
+    
+    <main>
+        <div class="portada">
+            <div class="box1">
+                    <div class="box2">
+                        <p class="mediano">Tu Carrito de Compras</p>
+                        <div class="tipo1" id="carrito">
+                            <!-- Aquí se mostrará el contenido del carrito -->
+                        </div>
+                        <div class="totales">
+                            <p>Subtotal: $<span id="subtotal">0</span></p>
+                            <p>Impuesto (IVA): $<span id="impuesto">0</span></p>
+                            <p>Total: $<span id="total">0</span></p>
+                        </div>
+                         <!-- Botones para vaciar el carrito y comprar -->
+                        <button id="vaciarCarrito">Vaciar Carrito</button>
+                        <button id="comprar">Comprar</button>
+                    </div>
+            </div>
+        </div>
+         <!-- Modal para los datos del comprador -->
+        <div id="modalCompra" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="closeBtn">&times;</span>
+                <h2>Información del Comprador</h2>
+                <form id="formCompra">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre"><br>
+                    
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" required placeholder="Ingresa tu dirección"><br>
+                    
+                    <label for="pago">Medio de Pago:</label>
+                    <select id="pago" name="pago">
+                        <option value="tarjeta">Tarjeta</option>
+                        <option value="efectivo">Efectivo</option>
+                    </select><br>
+
+                    <label for="clave">Clave:</label>
+                    <input type="password" id="clave" name="clave" required placeholder="Ingresa contraseña"><br>
+                    
+                    <button type="button" id="botonSalir">Salir</button>
+                    <button type="submit" id="botonComprar">Comprar</button>
+                </form>
+            </div>
+        </div>
+        
+    </main>
+
+    <script src="./carrito.js"></script>   
+
+        <!--footer-->
+    
+<section>
+    <footer class="footer">
+        <ul class="social-icon">
+          <li class="icon-elem">
+            <a href="https://www.instagram.com/sxcausil" target="_blank" class="icon">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li class="icon-elem">
+            <a href= "https://wa.me/573137360284?text=Hola%2C%20c%C3%B3mo%20est%C3%A1s%3F" target="_blank" class="icon">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+          <li class="icon-elem">
+            <a href="https://www.facebook.com/messages/t/yuleisy.shaira26/" target="_blank" class="icon">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li class="icon-elem">
+            <a href="https:/mail.google.com/mail/?view=cm&fs=1&to=causil845@gmail.com&suAsunto&body=Cuéntanos tu idea" target="_blank" class="icon">
+              <ion-icon name="mail-outline"></ion-icon> 
+            </a>
+          </li>
+        </ul>
+        <ul class="menu">
+          <li class="menu-elem">
+            <a href="./paginaPrincipalAngela.html" class="menu-icon"> Inicio </a>
+          </li>
+          <li class="menu-elem">
+            <a href="./blog.html" class="menu-icon"> Equipo </a>
+          </li>
+          <li class="menu-elem">
+            <a href="./contactoSebastian.html" class="menu-icon"> Contacto </a>
+          </li>
+          <li class="menu-elem">
+            <a href="./blog.html" class="menu-icon"> Sobre Nosotros </a>
+          </li>
+        </ul>
+        <p class="text">@2024 | Todos los derechos reservados</p>
+      </footer>
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      ></script>
+
+    </section>
+   
+</body>
+</html>

@@ -1,0 +1,235 @@
+/* esto es para que la imagen de la portada no tenga margen*/
+
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+.portada{
+  /*Aqui se centra y se edita la imagen y el texto de portada */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: arial;
+  color: rgb(255, 255, 255);
+  background-image: url(./portada.png);
+  height: 800px;
+  background-size: cover;
+  background-position: center;
+  background-color:rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+
+  /*Tamaño de texto y espacio entre el parrafo*/
+  h1{
+      font-size: 50px;
+      margin-bottom: 1px;
+  }
+  /*tamaño de parrafo y espacio de titulo*/
+  p{
+      font-size: 15px;
+      margin-top: 1;
+      font-family: arial;
+      font-weight: bold;
+  }
+}
+.box1{
+  display: flex;
+  flex-direction: row;
+  font-family: arial;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(240, 248, 255, 0.584);
+  height: 670px;
+  width: 1100px;
+  top: 20px;
+  gap: 5px;
+  border-radius: 8px;
+}
+
+.box2mod {
+width: 600px;
+height: 620px;
+border-radius: 8px;
+box-shadow: 0 2px 2px rgba(0, 0, 0, 0.536);
+margin: 20px;
+text-align: center;
+background-color: rgb(252, 252, 252);
+flex-shrink: 0;
+left: 50px;
+color: black;
+flex-direction: column;
+}
+.box3img{
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  border: 3px solid #f0841100;
+  flex-wrap: wrap;
+  
+}
+.box3opciones{
+  display: flex;
+  flex-direction: column;
+  font-family: arial;
+  text-align: center;
+  justify-content: center;
+  height: 620px;
+  width: 370px;
+  top: 25px;
+  left: 200px;
+  background-color: rgb(255, 255, 255);
+  gap: 1.5px;
+  overflow: auto;
+  border-radius: 8px;
+  margin: 20px;
+  border: 10px solid rgb(255, 255, 255);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.536);
+  align-items: center;
+}
+.main-image {
+  justify-content: center;
+  position: relative;
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+}
+.thumbnail {
+  
+  width: 180px;
+  height: 190px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.5s ease-in-out;
+  z-index: 1;
+  
+}
+.thumbnail-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+label {
+  margin-top: 5px;
+  font-weight: bold;
+  color: black;
+  font-family: arial;
+}
+.grande {
+  font-size: 20px;
+}
+.pequeña {
+  font-size: 15px;
+}
+
+select, input {
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #75b9d4a3;
+  color: rgb(1, 1, 1);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 17px;
+  max-width: 80%;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background-color: #75b9d4;
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+.totales{
+  font-size: 10px;
+  color: black;
+}
+.opcionesMenu{
+  border-radius: 10px;
+}
+#talla {
+  border-radius: 20px; /* Esto hará que el select sea ovalado */
+  padding: 10px; /* Espaciado interno para mejorar la apariencia */
+  border: 1px solid #ccc; /* Borde suave */
+  width: 200px; /* Ancho del menú desplegable */
+  height: 36px; /* Altura del menú desplegable */
+  font-family: arial; /* Asegura que la fuente coincida con el resto */
+  font-size: 14px;
+  background-color: white;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); /* Sombra sutil para darle profundidad */
+}
+#tenisBase {
+  border-radius: 20px; /* Esto hará que el select sea ovalado */
+  padding: 10px; /* Espaciado interno para mejorar la apariencia */
+  border: 1px solid #ccc; /* Borde suave */
+  width: 200px; /* Ancho del menú desplegable */
+  height: 36px; /* Altura del menú desplegable */
+  font-family: arial; /* Asegura que la fuente coincida con el resto */
+  font-size: 14px;
+  background-color: white;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); /* Sombra sutil para darle profundidad */
+}
+#logo {
+  border-radius: 20px; /* Esto hará que el select sea ovalado */
+  padding: 10px; /* Espaciado interno para mejorar la apariencia */
+  border: 1px solid #ccc; /* Borde suave */
+  width: 200px; /* Ancho del menú desplegable */
+  height: 36px; /* Altura del menú desplegable */
+  font-family: arial; /* Asegura que la fuente coincida con el resto */
+  font-size: 14px;
+  background-color: white;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); /* Sombra sutil para darle profundidad */
+}
+#cordon {
+  border-radius: 20px; /* Esto hará que el select sea ovalado */
+  padding: 10px; /* Espaciado interno para mejorar la apariencia */
+  border: 1px solid #ccc; /* Borde suave */
+  width: 200px; /* Ancho del menú desplegable */
+  height: 36px; /* Altura del menú desplegable */
+  font-family: arial; /* Asegura que la fuente coincida con el resto */
+  font-size: 14px;
+  background-color: white;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); /* Sombra sutil para darle profundidad */
+}
+#diseño {
+  border-radius: 20px; /* Esto hará que el select sea ovalado */
+  padding: 10px; /* Espaciado interno para mejorar la apariencia */
+  border: 1px solid #ccc; /* Borde suave */
+  width: 200px; /* Ancho del menú desplegable */
+  height: 36px; /* Altura del menú desplegable */
+  font-family: arial; /* Asegura que la fuente coincida con el resto */
+  font-size: 14px;
+  background-color: white;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); /* Sombra sutil para darle profundidad */
+}
+#cantidad {
+  border-radius: 20px; /* Esto hará que el select sea ovalado */
+  padding: 10px; /* Espaciado interno para mejorar la apariencia */
+  border: 1px solid #ccc; /* Borde suave */
+  width: 200px; /* Ancho del menú desplegable */
+  height: 36px; /* Altura del menú desplegable */
+  font-family: arial; /* Asegura que la fuente coincida con el resto */
+  font-size: 14px;
+  background-color: white;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); /* Sombra sutil para darle profundidad */
+}
+.rowdirection {
+  flex-direction: row;
+}
+.col{
+  width: 30%;
+  display: inline-block;
+}
